@@ -48,7 +48,7 @@ export default function Container() {
   };
   const completeTask = (index) => {
     const newTasks = [...tasks];
-    newTasks[index].completed = true;
+    newTasks[index].completed = !newTasks[index].completed;
     setTasks(newTasks);
   };
 
