@@ -11,14 +11,10 @@ export default function Task(props) {
           key={index}
           className={!task.completed?"taskMain":'taskMainComplete'}
         >
-          <div><input type="checkbox"  checked={task.completed}onClick={() => completeTask(index)}/></div>
+          <div><input type="checkbox"  checked={task.completed} onClick={() => completeTask(index)}/></div>
           <div className="titleConatiner">{task.title}</div>
           <div className="buttonContainer">
           <div>
-            {/* {editindex !== index && (
-              // <button  className="buttonMainStyle" style={{background:"blue",color:"white"}} >complete</button>
-              
-            )} */}
           </div>
           <div>
             {editindex !== index && (

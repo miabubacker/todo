@@ -29,13 +29,20 @@ export default function Container() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!value) return;
+     if(value.trim()===''||!value){
+       alert('Please Enter Valuble Values')
+       return
+     }
     addTask(value);
     setValue("");
   };
 
   const handleUpdate = (e) => {
     e.preventDefault();
+    if(value.trim()===''||!value){
+      alert('Please Enter Valuble Values')
+      return
+    }
     const preValue = [...tasks];
     preValue[editindex] = {
       title: value,
