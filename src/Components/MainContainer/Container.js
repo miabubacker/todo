@@ -8,18 +8,7 @@ export default function Container() {
   const [editable, setEditable] = useState(false);
   const [editindex, setEditIndex] = useState("");
   const [tasks, setTasks] = useState([
-    {
-      title: "Grab some Pizza",
-      completed: true,
-    },
-    {
-      title: "Do your workout",
-      completed: true,
-    },
-    {
-      title: "Hangout with friendsgygigygwyqtyti  rtuiwuigeiuquidoiuqwriqow8ur8uriqwoif8y834ytoehf8y8r98",
-      completed: false,
-    },
+  
   ]);
 
   const addTask = (title) => {
